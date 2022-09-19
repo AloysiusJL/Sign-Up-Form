@@ -5,30 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <div></div>
-        <div>
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-            <p>You <i>know</i> you want to to.</p>
+        <div class="picture">
+            <img src="./Assets/janosch-diggelmann-bRSoCdxcpfQ-unsplash.jpg" class="dogPicture">
+        </div>
+        <div class="content">
+            <div class="text">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>You <i>know</i> you want to to.</p>    
+            </div>
                 <div>
-                    <p>Let's do this!</p>
-                    <form>
-                        <p>FIRST NAME</p>
-                        <input type="text" id="first-name">
-                        <p>LAST NAME</p>
-                        <input type="text" id="last-name">
-                        <P>EMAIL</P>
-                        <input type="text" id="email">
-                        <p>PHONE NUMBER</p>
-                        <input type="text" id="password">
-                        <p>PASSWORD</p>
-                        <input type="text" id="confirm-password">
-                        <p>CONFIRM PASSWORD</p>
+                    <form class="form">
+                        <h3>Let's do this!</h3>
+                        <div class="input">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" class="focus">
+                        </div>
+                        <div class="input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="input">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number">
+                        </div>
+                        <div class="input">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="input">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password">
+                        </div>
                     </form>
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a>Log in</a></p>
+                        <button class="btn" type="submit">Create Account</button>
+                        <p class="log-in">Already have an account? <a href="#">Log in</a></p>    
                 </div>
         </div>
     </div>
